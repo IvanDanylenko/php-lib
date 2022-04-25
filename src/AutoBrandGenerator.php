@@ -8,7 +8,9 @@ class AutoBrandGenerator
 
     public static function generate()
     {
-        $arrKey = mt_rand(0, count(static::$brands));
+        $arrKey = mt_rand(0, count(static::$brands) - 1);
         return static::$brands[$arrKey];
     }
 }
+
+echo mt_rand(2, 3);
